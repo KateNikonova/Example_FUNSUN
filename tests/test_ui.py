@@ -22,8 +22,8 @@ def test_check_main_page_title(main_page):
         assert main_page.check_page_title(MAIN_PAGE_TITLE)
 
 
-@allure.story("UI")
 @allure.feature("Поиск тура")
+@allure.story("UI")
 @allure.title("Поиск тура с данными по умолчанию")
 @pytest.mark.positive
 @pytest.mark.ui
@@ -34,8 +34,8 @@ def test_search_default_tours(main_page):
         assert main_page.get_search_results_count() > 0
 
 
-@allure.story("UI")
 @allure.feature("Отели")
+@allure.story("UI")
 @allure.title("Переход на страницу отелей и проверка элементов")
 @pytest.mark.positive
 @pytest.mark.ui
